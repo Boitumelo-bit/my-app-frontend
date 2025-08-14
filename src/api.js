@@ -1,10 +1,9 @@
 import axios from 'axios';
 
-
-// For live deployment
+// Use environment variable if set, otherwise fallback to live backend
 const API_URL = process.env.REACT_APP_API_URL || 'https://backend2-ri3e.onrender.com/api';
 
-// Credit evaluation
+// ---------------- Credit Evaluation ----------------
 export const submitCreditData = async (data) => {
   const response = await axios.post(`${API_URL}/credit-inputs`, data);
   return response.data;
@@ -20,7 +19,7 @@ export const getCreditResult = async (inputId) => {
   return response.data;
 };
 
-// Admin functions
+// ---------------- Admin Functions ----------------
 export const getAllUsers = async () => {
   const response = await axios.get(`${API_URL}/admin/users`);
   return response.data;
@@ -35,3 +34,5 @@ export const updateUserRole = async (userId, role) => {
   const response = await axios.patch(`${API_URL}/admin/users/${userId}`, { role });
   return response.data;
 };
+
+export default API_URL;
