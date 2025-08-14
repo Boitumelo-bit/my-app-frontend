@@ -78,7 +78,7 @@ function Login({ setUser }) {
           </div>
 
           <div className="form-group role-selector">
-            <label>Login As</label>
+           
             <div className="role-buttons">
               <button
                 type="button"

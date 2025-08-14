@@ -119,7 +119,7 @@ function Register({ setUser }) {
           </div>
 
           <div className="form-group role-selector">
-            <label className="role-label">Account Type</label>
+           
             <div className="role-buttons">
               <button
                 type="button"
@@ -128,7 +128,7 @@ function Register({ setUser }) {
               >
                 <span className="role-icon">👤</span>
                 <span className="role-title">Standard User</span>
-                <span className="role-description">Access to basic features</span>
+                <span className="role-description">Access basic features</span>
               </button>
               <button
                 type="button"

@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+
+// For live deployment
+const API_URL = process.env.REACT_APP_API_URL || 'https://backend2-ri3e.onrender.com/api';
 
 // Credit evaluation
 export const submitCreditData = async (data) => {
